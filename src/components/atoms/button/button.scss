@@ -1,0 +1,45 @@
+
+@use"../../variables"as*;
+
+.button-tag{
+  background-color:#000000;
+  padding:0px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  width:200px;
+  height:55px;
+  transition:all 0.2s ease;
+  
+  
+
+
+  
+  
+
+}
+
+.button-tag:hover{
+  background:#442606;
+}
+
+h1{
+  color:#FFFFFF;
+  width: 52px;
+  height: 20px;
+  font-size:5px;
+  font-family:'Noto Sans JP';
+  font-style:normal;
+  line-height:20px;
+  display:flex;
+  align-items:center;
+  flex:none;
+  order:0;
+  flex-grow:0;
+
+
+
+
+}
+
