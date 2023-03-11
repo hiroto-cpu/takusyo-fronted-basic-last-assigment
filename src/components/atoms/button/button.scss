@@ -1,8 +1,9 @@
 
 @use"../../variables"as*;
 
-.button-tag{
-  background-color:#000000;
+.btn-con {
+  background-color:$black;
+  color:$white;
   padding:0px 16px;
   display:flex;
   align-items:center;
@@ -20,26 +21,37 @@
 
 }
 
-.button-tag:hover{
-  background:#442606;
+.btn-con:hover {
+  background:$orange_bistre;
 }
 
-h1{
-  color:#FFFFFF;
-  width: 52px;
-  height: 20px;
-  font-size:5px;
-  font-family:'Noto Sans JP';
-  font-style:normal;
-  line-height:20px;
-  display:flex;
-  align-items:center;
-  flex:none;
-  order:0;
-  flex-grow:0;
 
 
-
-
+ 
+@media screen and(min:600px){
+  .btn-con{
+    width:120px;
+    
+  }
 }
 
+@media screen and(min:800px){
+  .btn-con{
+    width:160px;
+    
+  }
+}
+
+@media screen and(min:1050){
+  .btn-con{
+    width:210px;
+    
+  }
+}
+
+@media screen and(min:1250px){
+  .btn-con{
+    width:250px;
+    
+  }
+}
