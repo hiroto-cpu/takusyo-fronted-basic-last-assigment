@@ -1,0 +1,57 @@
+
+@use"../../variables"as*;
+
+.btn-con {
+  background-color:$black;
+  color:$white;
+  padding:0px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  width:200px;
+  height:55px;
+  transition:all 0.2s ease;
+  
+  
+
+
+  
+  
+
+}
+
+.btn-con:hover {
+  background:$orange_bistre;
+}
+
+
+
+ 
+@media screen and(min:600px){
+  .btn-con{
+    width:120px;
+    
+  }
+}
+
+@media screen and(min:800px){
+  .btn-con{
+    width:160px;
+    
+  }
+}
+
+@media screen and(min:1050){
+  .btn-con{
+    width:210px;
+    
+  }
+}
+
+@media screen and(min:1250px){
+  .btn-con{
+    width:250px;
+    
+  }
+}
