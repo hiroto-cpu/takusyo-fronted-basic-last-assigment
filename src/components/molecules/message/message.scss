@@ -14,6 +14,11 @@
   order: 0;
   flex-grow: 0;
   margin-left: 100px;
+
+  @media screen and(max-width:$breakpoint-lg;) {
+    font-size: $fontsize-l;
+    line-height: 30px;
+  }
 }
 
 .explain {
@@ -29,6 +34,10 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+
+  @media screen and(max-width:$breakpoint-lg;) {
+    line-height: 28px;
+  }
 }
 
 div {
