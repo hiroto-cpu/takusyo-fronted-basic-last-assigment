@@ -1,0 +1,37 @@
+@use "../../variables" as *;
+
+.card-image {
+  clip-path: polygon(0% 100%, 0% 55%, 40% 0%, 100% 0%, 100% 100%);
+  position: relative;
+}
+
+.card-title {
+  display: flex;
+  justify-content: flex-start;
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 29px;
+  position: absolute;
+}
+
+.card-text {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.card-btn {
+  background-color: black;
+  color: white;
+  font-family: $fontfamily-gothic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-s;
+  line-height: $fontfamily-gothic;
+}
+
+.concept {
+  display: flex;
+  align-items: center;
+}
