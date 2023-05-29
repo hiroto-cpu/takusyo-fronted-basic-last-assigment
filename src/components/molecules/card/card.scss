@@ -1,29 +1,21 @@
 @use "../../variables" as *;
 
 .card-body {
-  display: flex;
-  flex-direction: column;
+  .box-image {
+    position: relative;
+    .card-img {
+      width: 100%;
+      align-self: stretch;
+      clip-path: polygon(0% 100%, 0% 55%, 40% 0%, 100% 0%, 100% 100%);
+      transition: all 0.2s ease;
+      overflow: hidden;
 
-  .card-image {
-    clip-path: polygon(0% 100%, 0% 55%, 40% 0%, 100% 0%, 100% 100%);
-    display: flex;
-    align-self: stretch;
-
-    @media (min-width: 768px) {
-      &:hover {
-        transform: scale(1.1);
+      @media (min-width: 768px) {
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
-  }
-
-  .card-title {
-    justify-content: flex-start;
-    font-family: $fontfamily-gothic;
-    font-style: normal;
-    font-weight: 650;
-    font-size: $fontfamily-gothic;
-    line-height: 29px;
-    position: absolute;
   }
 
   .card-down {
@@ -33,14 +25,11 @@
     justify-content: center;
     align-items: center;
     padding: 32px;
-    align-self: stretch;
     height: 250px;
 
     .card-text {
       display: flex;
       justify-content: center;
-      font-family: $fontfamily-gothic;
-      font-style: normal;
       font-size: 14px;
       line-height: 33px;
       font-weight: 400;
@@ -48,6 +37,7 @@
 
     .btn-con {
       display: block;
+      width: 150px;
       background: $black;
       color: $white;
       padding: 0px 16px 0px 16px;
@@ -66,4 +56,17 @@
       }
     }
   }
+}
+
+.box-image::before {
+  content: "CONCEPT";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100;
+  display: inline-block;
+  z-index: 10;
+  color: $orange_bistre;
+  font-weight: 700;
+  font-size: 20px;
 }
