@@ -1,8 +1,8 @@
 @use "../../variables" as *;
 
 .card-body {
-  .box-image {
-    position: relative;
+  .img-wrapper {
+    overflow: hidden;
     .card-img {
       width: 100%;
       align-self: stretch;
