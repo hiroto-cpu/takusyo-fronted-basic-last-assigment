@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .card-body {
-  .img-wrapper {
+  .img-box {
     overflow: hidden;
 
     .img-card {
@@ -57,7 +57,7 @@
   }
 }
 
-.img-wrapper::before {
+.img-box::before {
   content: "CONCEPT";
   position: absolute;
   top: 0;
