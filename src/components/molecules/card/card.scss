@@ -3,6 +3,7 @@
 .card-body {
   .card-box {
     overflow: hidden;
+    margin: 0px;
 
     .card-img {
       clip-path: polygon(0% 100%, 0% 55%, 40% 0%, 100% 0%, 100% 100%);
@@ -23,6 +24,7 @@
     align-items: center;
     padding: 32px;
     height: 250px;
+    margin: 0px;
 
     .card-text {
       display: flex;
