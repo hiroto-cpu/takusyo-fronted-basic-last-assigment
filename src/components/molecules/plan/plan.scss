@@ -1,70 +1,21 @@
 @use "../../variables" as *;
 
-div {
-  text-align: center;
-}
-
 .day-plan {
   ul {
-    padding-left: 0px;
-  }
-  li {
-    border: 1px solid #dddddd;
-    padding: 20px 10px;
-    box-sizing: border-box;
-    list-style: none;
-  }
-
-  li:nth-child(1) {
-    background: #a19283;
-    height: 69px;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-  }
-
-  li:nth-child(2) {
-    background: #ece9e6;
-    height: 142px;
-
-    p:nth-child(1) {
-      color: #442606;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 58px;
+    padding-left: 0;
+    li {
+      border: solid 1px;
+      list-style-type: none;
     }
   }
 }
 
 .standard-plan {
   ul {
-    border: 5px solid #442606;
-    padding-left: 0px;
-  }
-  li {
-    list-style: none;
-    border: 1px solid #dddddd;
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
-
-  li:nth-child(1) {
-    background: #442606;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 700;
-    height: 69px;
-  }
-
-  li:nth-child(2) {
-    background: #ece9e6;
-    height: 142px;
-    padding: 24px 0px;
-
-    p:nth-child(1) {
-      color: #442606;
-      font-size: 40px;
-      font-weight: 700;
+    padding-left: 0;
+    li {
+      border: solid 1px;
+      list-style-type: none;
     }
   }
 }
