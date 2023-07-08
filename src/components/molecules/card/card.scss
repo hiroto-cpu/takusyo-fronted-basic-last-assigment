@@ -4,16 +4,15 @@
   .card-box {
     overflow: hidden;
     margin: 0px;
+    position: relative;
+    width: 100%;
 
     .card-img {
-      clip-path: polygon(0% 100%, 0% 55%, 40% 0%, 100% 0%, 100% 100%);
-      transition: 0.2s all;
       width: 100%;
-      @media screen and (min-width: 768px) {
-        &:hover {
-          transform: scale(1.2);
-        }
-      }
+      overflow: hidden;
+      transition: 0.2s all;
+      transform-origin: center center;
+      display: block;
     }
   }
   .card-down {
@@ -57,7 +56,7 @@
   }
 }
 
-.card-box::before {
+.card-body::before {
   content: "CONCEPT";
   position: absolute;
   top: 30px;
@@ -68,4 +67,22 @@
   color: $orange_bistre;
   font-weight: 700;
   font-size: 20px;
+}
+
+.card-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background-color: white; /* 三角形の色 */
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  transition: 0.2s all;
+  pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+  .card-box:hover .card-img {
+    transform: scale(1.2);
+  }
 }
