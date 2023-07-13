@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
   }
 
-  @media screen and(min-width:$breakpoint-lg) {
+  @media screen and(max-width:$breakpoint-lg) {
     width: 200px;
     height: 55px;
   }
