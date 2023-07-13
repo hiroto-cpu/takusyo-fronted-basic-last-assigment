@@ -1,18 +1,22 @@
 @use "../../variables" as *;
 
 .btn-con {
+  display: inline-block;
   background-color: $black;
-  color: $white;
-  padding: 0px 16px 0px 16px;
-  font-size: 14px;
-  width: 150px;
-  height: 55px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  text-decoration: none;
+  border: 1px solid #ccc;
   transition: all 0.2s ease;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+
+  p {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   @media screen and(min-width:$breakpoint-lg) {
     width: 200px;
@@ -20,7 +24,12 @@
   }
 
   @media screen and(max-width:$breakpoint-md) {
-    width: 180px;
+    width: 150px;
+    height: 55px;
+  }
+
+  @media screen and(max-width:$breakpoint-sm) {
+    weight: 180px;
     height: 45px;
   }
 }
