@@ -1,42 +1,48 @@
 @use "../../variables" as *;
 
-.title {
-  font-family: "Noto Serif JP";
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 36px;
-  line-height: 54px;
-  display: flex;
-  align-items: center;
+.box {
   text-align: center;
-  color: $black;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-left: 100px;
-
   @media screen and(max-width:$breakpoint-lg) {
-    font-size: $fontsize-l;
-    line-height: 30px;
+    padding: 52px 20px 52px 20px;
+    weight: 327px;
+    height: 204px;
   }
-}
 
-.explain {
-  font-family: $fontfamily-gothic;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: $black;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  @media screen and(max-width:$breakpoint-md) {
+    weight: 200px;
+    height: 128px;
+    padding: 32px 20px 32px 20px;
+  }
 
-  @media screen and(max-width:$breakpoint-lg) {
-    line-height: 28px;
+  .title {
+    font-family: $fontfamily-mincho;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $black;
+    margin-left: 100px;
+
+    @media screen and(max-width:$breakpoint-lg) {
+      font-weight: 400px;
+      font-size: 36px;
+      line-height: 54px;
+      color: $black;
+    }
+
+    @media screen and(max-width:$breakpoint-md) {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    .explain {
+      font-family: $fontfamily-gothic;
+      font-size: 400;
+      font-size: 14px;
+      line-height: 28px;
+      color: $black;
+    }
   }
 }
 
