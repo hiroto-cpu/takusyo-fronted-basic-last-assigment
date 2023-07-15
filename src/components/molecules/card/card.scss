@@ -7,6 +7,32 @@
     position: relative;
     width: 100%;
 
+    &::before {
+      content: "CONCEPT";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 100;
+      display: inline-block;
+      z-index: 10;
+      color: $orange_bistre;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 150px;
+      background-color: white; /* 三角形の色 */
+      clip-path: polygon(0 0, 0% 100%, 100% 0);
+      transition: 0.5s all;
+      pointer-events: none;
+    }
+
     .card-img {
       width: 100%;
       overflow: hidden;
@@ -23,7 +49,6 @@
     align-items: center;
     padding: 32px;
     height: 250px;
-    margin: 0px;
 
     .card-text {
       display: flex;
@@ -56,31 +81,6 @@
   }
 }
 
-.card-body::before {
-  content: "CONCEPT";
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  right: 100;
-  display: inline-block;
-  z-index: 10;
-  color: $orange_bistre;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.card-box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150px;
-  height: 150px;
-  background-color: white; /* 三角形の色 */
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
-  transition: 0.2s all;
-  pointer-events: none;
-}
 @media screen and (min-width: 768px) {
   .card-box:hover .card-img {
     transform: scale(1.2);
