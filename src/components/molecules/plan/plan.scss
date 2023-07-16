@@ -19,6 +19,11 @@
     p:nth-child(1) {
       font-size: 30px;
       font-weight: 700;
+
+      &::before {
+        content: "¥";
+        font-size: 20px;
+      }
     }
 
     p:nth-child(2) {
@@ -30,14 +35,14 @@
 
 .standard-plan {
   border: 4px solid #442606;
-  height: 451px;
+  height: 100%;
 
   padding: 0px;
 
   ul li:nth-child(1) {
     background-color: #442606;
     color: #ffffff;
-    weight: 220px;
+    weight: 100%;
     height: 69px;
   }
 
@@ -50,6 +55,11 @@
     p:nth-child(1) {
       font-size: 30px;
       font-weight: 700;
+
+      &::before {
+        content: "¥";
+        font-size: 20px;
+      }
     }
 
     p:nth-child(2) {
