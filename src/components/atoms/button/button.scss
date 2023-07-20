@@ -4,18 +4,20 @@
   display: inline-block;
   background-color: $black;
   text-decoration: none;
-  border: 1px solid #ccc;
+  border: 1px solid $gray_desertStorm;
   transition: all 0.2s ease;
-  position: relative;
   font-weight: 400;
-  font-size: 14px;
+  font-size: $fontsize-s;
+  color: $white;
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  p {
+  &:hover {
     color: $white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: $orange_bistre;
   }
 
   @media screen and(max-width:$breakpoint-lg) {
@@ -32,8 +34,4 @@
     weight: 180px;
     height: 45px;
   }
-}
-
-.btn-con:hover {
-  background: $orange_bistre;
 }
