@@ -1,7 +1,6 @@
 @use "../../variables" as *;
 
 .time-plan {
-  weight: 220px;
   ul li:nth-child(1) {
     background-color: #a19283;
     color: #ffffff;
@@ -22,13 +21,13 @@
 
       &::before {
         content: "¥";
-        font-size: 20px;
+        font-size: $fontsize-l;
       }
     }
 
     p:nth-child(2) {
       font-weight: 400;
-      font-size: 14px;
+      font-size: $fontsize-s;
     }
   }
 }
@@ -58,13 +57,13 @@
 
       &::before {
         content: "¥";
-        font-size: 20px;
+        font-size: $fontsize-l;
       }
     }
 
     p:nth-child(2) {
       font-weight: 400;
-      font-size: 14px;
+      font-size: $fontsize-s;
     }
   }
 }
