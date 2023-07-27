@@ -1,10 +1,8 @@
 @use "../../variables" as *;
 
-.btn-con {
-  display: inline-block;
+.button {
   background-color: $black;
   text-decoration: none;
-  border: 1px solid $gray_desertStorm;
   transition: all 0.2s ease;
   font-weight: 400;
   font-size: $fontsize-s;
