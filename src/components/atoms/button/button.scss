@@ -20,16 +20,14 @@
 
   @media screen and(max-width:$breakpoint-lg) {
     width: 200px;
-    height: 55px;
   }
 
   @media screen and(max-width:$breakpoint-md) {
     width: 150px;
-    height: 55px;
   }
 
   @media screen and(max-width:$breakpoint-sm) {
-    weight: 180px;
+    width: 180px;
     height: 45px;
   }
 }
