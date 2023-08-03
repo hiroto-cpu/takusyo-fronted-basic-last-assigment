@@ -1,0 +1,35 @@
+.news-and-events-title {
+  h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57.48px;
+  }
+
+  .caption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.17px;
+  }
+
+  ul {
+    padding-left: 0;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23.17px;
+
+      .date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #999999;
+      }
+    }
+
+    li {
+      list-style: none;
+      border: 1px solid #dddddd;
+    }
+  }
+}
