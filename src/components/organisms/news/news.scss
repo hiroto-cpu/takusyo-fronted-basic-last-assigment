@@ -1,0 +1,64 @@
+@use "../../variables" as *;
+
+.news-and-events-title {
+  position: relative;
+  background-color: #f5f5f5;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57.48px;
+  }
+
+  .caption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.17px;
+  }
+
+  ul {
+    padding-left: 56px 0px;
+
+    li {
+      list-style: none;
+      border: 1px solid #dddddd;
+      padding-top: 20px;
+      padding-left: 20px;
+      background-color: $white;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: all 0.2s ease;
+
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #999999;
+      }
+
+      .list-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23.17px;
+        color: #000000;
+        text-decoration: none;
+      }
+
+      :hover {
+        color: #442606;
+      }
+    }
+
+    li + li {
+      border-top: none;
+    }
+  }
+
+  .news-and-events-more {
+    position: absolute;
+    right: 0;
+  }
+}
